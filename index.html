@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revive & Restore | Blue Bioeconomy Moorea</title>
+    <style>
+        :root {
+            --deep-ocean: #0a192f;
+            --bio-green: #74c365;
+            --accent-blue: #00d2ff;
+            --text-gray: #ccd6f6;
+            --white: #ffffff;
+        }
+
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            line-height: 1.8; 
+            color: var(--white); 
+            margin: 0; 
+            background: var(--deep-ocean); 
+        }
+        
+        /* Entrance Animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal { animation: fadeInUp 1s ease-out forwards; }
+
+        .hero { 
+            height: 75vh;
+            /* High-res Coral Reef with Orange Fish */
+            background: linear-gradient(rgba(10, 25, 47, 0.4), rgba(10, 25, 47, 0.8)), 
+                        url('https://images.pexels.com/photos/2156311/pexels-photo-2156311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover; 
+            background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;
+        }
+
+        .hero h1 { font-size: 4rem; margin-bottom: 10px; color: var(--accent-blue); text-transform: uppercase; letter-spacing: 4px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.6rem; max-width: 900px; color: var(--white); }
+
+        .container { max-width: 1100px; margin: auto; padding: 80px 20px; }
+
+        .section-title { font-size: 2.8rem; color: var(--bio-green); margin-bottom: 40px; border-bottom: 2px solid #233554; padding-bottom: 15px; }
+
+        /* Two-Column Layouts */
+        .flex-row { display: flex; flex-wrap: wrap; gap: 50px; margin-bottom: 80px; }
+        .flex-col { flex: 1; min-width: 350px; }
+
+        /* THE SPICE: Box Hover Lift */
+        .feature-card { 
+            background: #112240; padding: 40px; border-radius: 12px; 
+            border: 1px solid #233554; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .feature-card:hover { 
+            border-color: var(--accent-blue); 
+            transform: translateY(-15px); 
+            box-shadow: 0 20px 40px rgba(0, 210, 255, 0.15);
+        }
+        .feature-card h3 { color: var(--accent-blue); margin-top: 0; font-size: 1.8rem; }
+
+        /* Data Table */
+        .data-table { width: 100%; border-collapse: collapse; margin: 30px 0; background: #112240; border-radius: 10px; overflow: hidden; }
+        .data-table th, .data-table td { padding: 20px; text-align: left; border: 1px solid #233554; }
+        .data-table th { color: var(--bio-green); background: #1d2d50; font-size: 1.1rem; }
+
+        .highlight-text { color: var(--bio-green); font-weight: bold; }
+
+        /* THE SIGNATURE SECTION */
+        .signature-section {
+            background: #020c1b;
+            padding: 100px 20px;
+            text-align: center;
+            border-top: 3px solid var(--bio-green);
+        }
+        .signature-box {
+            display: inline-block;
+            padding: 40px;
+            border: 2px dashed var(--accent-blue);
+            border-radius: 20px;
+        }
+        .signature-name {
+            font-family: 'Brush Script MT', cursive, sans-serif;
+            font-size: 4rem;
+            color: var(--accent-blue);
+            margin: 15px 0;
+        }
+
+        footer { background: #010812; padding: 50px; text-align: center; color: var(--text-gray); font-size: 1rem; }
+    </style>
+</head>
+<body>
+
+<section class="hero reveal">
+    <h1>Revive & Restore</h1>
+    <p>Scaling Reef Recovery Through Circular Biotechnology and Sustainable Bio-Industrial Pipelines</p>
+</section>
+
+<div class="container">
+    
+    <section id="abstract" class="reveal">
+        <h2 class="section-title">The Challenge</h2>
+        <div class="flex-row">
+            <div class="flex-col">
+                <p>Coral reefs globally are facing a dire transition from coral-dominated states to macroalgae-dominated ones, primarily driven by ocean warming and localized nutrient pollution. In Moorea, the invasive brown algae <strong>Turbinaria ornata</strong> has become a primary threat. It forms dense canopies that prevent coral larvae from settling and physically smothers existing colonies.</p>
+                <p>While physical removal by community groups is a critical first step, it creates a massive logistical burden. Currently, this biomass is sent to landfills where it decomposes, releasing <strong>methane gas</strong>—a greenhouse gas significantly more potent than carbon dioxide. Our project turns this environmental hazard into a renewable resource.</p>
+            </div>
+            <div class="flex-col feature-card">
+                <h3>Impact Targets & Metrics</h3>
+                <ul>
+                    <li><strong>3-fold increase</strong> in coral recruitment and larval settlement over a 2-year monitoring period.</li>
+                    <li>Achieving up to a <strong>40% increase</strong> in adult coral cover in focal restoration zones.</li>
+                    <li>A <strong>50-90% reduction</strong> in <em>Turbinaria</em> canopy density across treated reef flats.</li>
+                    <li>Mitigation of landfill methane emissions through high-efficiency anaerobic digestion and fermentation.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pathways" class="reveal">
+        <h2 class="section-title">Value Recovery Pathways</h2>
+        <div class="flex-row">
+            <div class="flex-col feature-card">
+                <h3>I. Advanced Bioethanol Production</h3>
+                <p>We utilize direct fermentation of complex marine polysaccharides—specifically <strong>Alginate and Mannitol</strong>—using specialized microbial platforms including engineered <em>Escherichia coli</em> and <em>Saccharomyces cerevisiae</em>.</p>
+                <p><span class="highlight-text">The Innovation:</span> Unlike terrestrial biofuel processes that require energy-intensive and toxic acid hydrolysis, our microbial platforms bypass these steps. This allows us to achieve <strong>80%+ conversion efficiency</strong> directly from raw biomass, making the process economically viable for island nations.</p>
+            </div>
+
+            <div class="flex-col feature-card">
+                <h3>II. Agricultural Biostimulants</h3>
+                <p>Beyond fuel, we process residual biomass and aqueous extracts into organic liquid biostimulants. These are designed to enhance plant immunity, nutrient uptake, and drought resistance in tropical soils.</p>
+                <p><span class="highlight-text">The Trial:</span> Our formulations are currently being validated in greenhouse trials with <strong>tomato plants</strong>, a staple crop in French Polynesia. By measuring root-to-shoot ratios and biomass accumulation, we are creating a locally sourced alternative to expensive, imported synthetic fertilizers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" class="reveal">
+        <h2 class="section-title">Scientific Roadmap</h2>
+        <p>The project bridges the gap between field ecology on the reefs of Moorea and high-tech microbiology at the University of California, Berkeley.</p>
+        <table class="data-table">
+            <tr>
+                <th>Operational Phase</th>
+                <th>Scientific Methodology</th>
+                <th>Projected Outcome</th>
+            </tr>
+            <tr>
+                <td><strong>Biomass Preparation</strong></td>
+                <td>Mechanical compression and carbohydrate profiling using HPLC.</td>
+                <td>Standardized, nutrient-rich fermentation feedstock.</td>
+            </tr>
+            <tr>
+                <td><strong>Halotolerance Research</strong></td>
+                <td>Comparative analysis of fermentation in washed vs. unwashed wet biomass.</td>
+                <td>Massive reduction in fresh-water consumption for production.</td>
+            </tr>
+            <tr>
+                <td><strong>Reef Monitoring</strong></td>
+                <td>GPS-tracked removal sites coupled with settlement tile analysis.</td>
+                <td>Quantifiable data on coral recovery and biodiversity return.</td>
+            </tr>
+            <tr>
+                <td><strong>Lifecycle Analysis</strong></td>
+                <td>Carbon-footprint tracking from reef removal to final bioproduct use.</td>
+                <td>Validated "Blue Bioeconomy" model for island sustainability.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="partners" class="reveal">
+        <h2 class="section-title">Consortium & Community Support</h2>
+        <p>This initiative is built on a foundation of local partnership and responds directly to the <strong>RESIPOL Consortium's</strong> need for macroalgae valorization. We collaborate with:</p>
+        <p><em>Coral Gardeners • Hello Reef Tahiti • Science 4 Reefs • Te Mauri Ora Project • UC Berkeley Gump Station • Moorea Sunset Beach</em></p>
+    </section>
+
+</div>
+
+<section class="signature-section reveal">
+    <div class="signature-box">
+        <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; color: var(--text-gray);">Digital Platform Developed By</p>
+        <div class="signature-name">Your Name Here</div>
+        <p style="color: var(--bio-green); font-weight: bold; font-size: 1.2rem;">NOAA Ambassador | Cohort 4</p>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Principal Investigators:</strong> Adrienne M.S. Correa & Thiago B.S. Correa | University of California Berkeley</p>
+    <p>Project Funded & Supported by the Revive & Restore Research Fund</p>
+</footer>
+
+</body>
+</html>
